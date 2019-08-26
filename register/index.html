@@ -3,11 +3,22 @@
 <title>Form submission</title>
 </head>
 <body>
-<form action="https://formspree.io/i.n.vos@student.tue.nl" method="POST">
-  <input type="text" name="name">
-  <input type="email" name="_replyto">
-  <input type="submit" value="Send">
-  <input type="hidden" name="_next" value="/thank-you.html">
-</form>
+
+  
+<form id="form" class="form" action="https://formspree.io/i.n.vos@student.tue.nl" method="POST">
+  <ul>
+    <li> <label for="name">Your Name:</label> 
+      <input type="text" placeholder="ನಿಮ್ಮ ಹೆಸರು" id="name" name="name" tabindex="1"></li>
+    <li> <label for="email">Your Email:</label> 
+      <input type="email" placeholder="ನಿಮ್ಮ ಇಮೇಲ್" id="email" name="_replyto" tabindex="2"></li>
+    <li> <label for="message">Message:</label> 
+      <textarea placeholder="ನಿಮ್ಮ ಸಂದೇಶ" id="message" name="message" tabindex="3"></textarea></li>
+  </ul><input type="submit" value="ಕಳುಹಿಸು" id="submit"> 
+  <input type="hidden" name="_next" value="/thank-you.html"> </form>  
+  
+  
+  
+  
+  
 </body>
 </html> 
